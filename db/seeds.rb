@@ -8,7 +8,7 @@ mega_eats =  {name: "Mega Eats", address: "Planet road 44", category: 'belgian',
 doudous_fish_and_chips =  {name: "DOUDOUs Fish and Chips", address: "somewehre on earth", category: 'italian', phone_number: "333333"}
 fast_jhonny =  {name: "Fast Jhonny", address: "44 Klumzy road", category: 'french', phone_number: "333333"}
 
-[dishoom, pizza_east].each do |attributes|
+[dishoom, pizza_east, mega_eats,doudous_fish_and_chips, fast_jhonny].each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end
