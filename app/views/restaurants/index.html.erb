@@ -5,8 +5,9 @@
       <li>
         <%= restaurant.name %>
         <%= link_to 'View Restaurant', restaurant_path(restaurant) %>
+        <%= link_to 'Review restaurant', new_restaurant_review_path(restaurant)%>
       </li>
     <% end %>
   </ul>
-  <%= link_to 'Add New Restaurant', new_restaurant_path, class: 'btn btn-primary' %>
-</div>
+</div> <!-- This div closes the above div correctly -->
+<%= link_to 'Add New Restaurant', new_restaurant_path, class: 'btn btn-primary' %>

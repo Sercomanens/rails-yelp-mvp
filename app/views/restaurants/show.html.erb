@@ -3,3 +3,7 @@
 <h4>☎️ <%= @restaurant.phone_number %></h4>
 <h4>Category: <%= @restaurant.category %></h4>
 <%= link_to 'Back to Restaurants', restaurants_path, class: 'btn btn-secondary' %>
+<h3>Reviews:</h3>
+<% @restaurant.reviews.each do |review| %>
+  <p><%= @restaurant.name %> - "<%= review.content %>" Rating: <%= '⭐️' * review.rating %></p>
+<% end %>
